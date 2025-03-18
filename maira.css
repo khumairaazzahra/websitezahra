@@ -145,7 +145,7 @@ html {
     background: var(--transparant);
 }
 
-#portfolio p {
+#portgolio p {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--primaryTextColor);
@@ -260,6 +260,10 @@ button:hover {
 
     .nav-menu.active {
         display: flex;
+    }
+
+    .burger {
+        display: block;
     }
 
     #hero {
