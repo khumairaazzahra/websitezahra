@@ -76,13 +76,6 @@ body {
     background: var(--secondaryBackgroundColor);
 }
 
-.burger {
-    display: none;
-    font-size: 2rem;
-    color: var(--primaryTextColor);
-    cursor: pointer;
-}
-
 #hero {
     height: 100vh; /* Membuat hero section setinggi layar */
     display: flex;
@@ -205,7 +198,7 @@ html {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-#contact h2 {
+#conta h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: var(--primaryTextColor);
@@ -248,14 +241,74 @@ button:hover {
 }
 
 @media screen and (max-width: 767px) {
+    .nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     .nav-menu {
-        display: flex !important;
+        display: none;
         flex-direction: column;
         background: var(--secondaryBackgroundColor);
-        position: static;
-        width: auto;
-        padding: 0;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
         text-align: center;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    #hero {
+        padding: 2rem;
+    }
+
+    .hero-name {
+        font-size: 1.8rem;
+    }
+}
+
+/* Navigasi normal untuk layar besar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu li a {
+    color: var(--primaryTextColor);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: 2px solid var(--primaryTextColor);
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover {
+    background: var(--secondaryBackgroundColor);
+}
+
+/* Navigasi yang mengecil di layar kecil */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem; /* Mengurangi jarak antar menu */
+        font-size: 0.9rem; /* Mengecilkan ukuran font */
+    }
+
+    .nav-menu li a {
+        padding: 5px 10px; /* Mengurangi padding agar lebih ringkas */
+        font-size: 0.8rem; /* Mengecilkan teks */
     }
 }
 
