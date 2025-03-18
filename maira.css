@@ -26,19 +26,27 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
+}
+
+/* Logo KAY di kiri */
+.logo {
+    margin-right: auto;
 }
 
 .logo a {
     font-size: 2rem;
     font-weight: bold;
     color: var(--primaryTextColor);
+    text-decoration: none;
 }
 
+/* Menu navigasi sejajar dengan logo */
 .nav-menu {
     list-style: none;
     display: flex;
     gap: 2rem;
+    margin-left: auto;
 }
 
 .nav-menu li a {
