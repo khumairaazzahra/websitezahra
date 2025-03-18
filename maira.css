@@ -3,18 +3,9 @@
 :root {
     --primaryTextColor: #e4ebff;
     --secondaryTextColor: #a7bdee;
-    --borderColor: #181450;
-    --lineColor: #07061d;
-    
     --primaryBackgroundColor: #050318;
     --secondaryBackgroundColor: #0d0b2e;
     --thirdBackgroundColor: #272363;
-
-    --primaryIconColor: #e4ebff;
-    --secondaryIconColorHover: #807dac;
-
-    --sectionPadding: 6rem 0;
-    --itemBorderRadius: 0.7rem;
 }
 
 * {
@@ -26,19 +17,11 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    background: url('background.jpg'), linear-gradient(to bottom, rgb(45, 61, 131) 35%, rgb(63, 84, 150) 45%, rgb(76, 96, 184) 55%, 
-    rgb(105, 134, 212) 65%, rgb(153, 171, 252) 75%, rgb(165, 181, 253) 85%);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    background: linear-gradient(to bottom, #2d3d83, #3f5496, #4c60b8, #6986d4, #99abfc);
+    color: var(--primaryTextColor);
 }
 
-.main-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
+/* Navigasi */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -50,7 +33,6 @@ body {
     font-size: 2rem;
     font-weight: bold;
     color: var(--primaryTextColor);
-    text-decoration: none;
 }
 
 .nav-menu {
@@ -73,26 +55,9 @@ body {
     background: var(--secondaryBackgroundColor);
 }
 
-/* Responsif: Navigasi mengecil di layar kecil */
-@media screen and (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-menu {
-        gap: 1rem;
-        font-size: 0.9rem;
-    }
-
-    .nav-menu li a {
-        padding: 5px 10px;
-        font-size: 0.8rem;
-    }
-}
-
+/* Hero Section */
 #hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,44 +66,53 @@ body {
     padding: 2rem;
 }
 
-.hero-name {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primaryIconColor);
-}
-
-#about-me, #portfolio, #contact {
-    padding: var(--sectionPadding);
+/* About Me */
+#about-me {
     text-align: center;
-    color: var(--primaryTextColor);
+    padding: 4rem 2rem;
+    background: var(--thirdBackgroundColor);
 }
 
-.about-container, .portfolio-container, .contact-container {
+.about-container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
-    border-radius: var(--itemBorderRadius);
-    background: var(--thirdBackgroundColor);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio */
+#portfolio {
+    text-align: center;
+    padding: 4rem 2rem;
 }
 
 .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    justify-items: center;
 }
 
 .portfolio-item {
     background: var(--thirdBackgroundColor);
     padding: 1rem;
-    border-radius: var(--itemBorderRadius);
+    border-radius: 10px;
+    width: 100%;
     max-width: 300px;
 }
 
 .portfolio-item img {
     width: 100%;
-    border-radius: var(--itemBorderRadius);
+    border-radius: 10px;
+}
+
+/* Contact Me */
+#contact {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 input, textarea {
@@ -148,19 +122,29 @@ input, textarea {
     border: 2px solid var(--primaryTextColor);
     background: transparent;
     color: var(--primaryTextColor);
-}
-
-button {
-    padding: 10px;
-    background: var(--primaryTextColor);
-    color: var(--primaryBackgroundColor);
     font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin-bottom: 10px;
 }
 
-button:hover {
-    background: var(--secondaryTextColor);
-}
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+
+    .nav-menu li a {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    #hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-container,
+    .contact-container {
+        paddi
