@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Website</title>
     <link rel="stylesheet" href="maira.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 <body>
     <header>
@@ -13,9 +14,10 @@
                 <div class="logo">
                     <a href="/">KAY</a>
                 </div>
+                    
                 <nav>
-                    <ul class="nav-menu">
-                        <li><a href="#home">Home</a></li>
+                        <ul class="nav-menu" id="nav-menu">
+                        <li><a href="#hero">Home</a></li>
                         <li><a href="#about-me">About Me</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -34,15 +36,20 @@
         </div>
     </section>
 
+    <!-- Kotak baru -->
+    <div class="kotak"></div>
+
     <!-- About Me Section -->
     <section id="about-me">
         <div class="about-container">
             <h2>About Me</h2>
-            <p>Halo! Saya Khumaira Azzahra Yarman, seorang web developer yang sedang belajar membangun website responsif dan interaktif.</p>
+            <p>Halo! Saya Khumaira Azzahra Yarman, seorang web developer yang sedang belajar membangun website responsif dan interaktif. Saya memiliki minat dalam desain web dan pengembangan front-end.</p>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
+    <!-- Kotak baru 2 -->
+    <div class="kotak2"></div>
+
     <section id="portfolio">
         <h2>My Portfolio</h2>
         <div class="portfolio-container">
@@ -60,18 +67,21 @@
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
+<!-- Kotak baru 3 -->
+<div class="kotak3"></div>
     <section id="contact">
         <h2>Contact Me</h2>
         <div class="contact-container">
             <form action="submit.php" method="POST">
-                <input type="text" name="name" placeholder="Masukkan nama" required>
-                <input type="email" name="email" placeholder="Masukkan email" required>
-                <textarea name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+                <input type="text" id="name" name="name" placeholder="Masukkan nama" required>
+                <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+
                 <button type="submit">Kirim</button>
             </form>
         </div>
     </section>
+
+
 </body>
 </html>
