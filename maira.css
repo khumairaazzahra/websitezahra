@@ -116,11 +116,12 @@ body {
 
     .nav-menu {
         display: flex; /* Gunakan flexbox untuk menyusun item menu */
-        flex-direction: row; /* Menjaga menu tetap horizontal */
+        flex-direction:row; /* Menjaga menu tetap horizontal */
         justify-content: center; /* Menyelaraskan menu secara horizontal */
         gap: 1rem; /* Mengurangi jarak antar item menu */
         padding: 0; /* Menghapus padding */
         width: 100%; /* Memastikan menu memenuhi lebar penuh */
+        margin: 0 auto;
     }
 
     .nav-menu li {
@@ -133,6 +134,33 @@ body {
         border: 2px solid white; /* Border */
         border-radius: 5px; /* Membulatkan sudut */
         color: #fff; /* Mengubah warna teks menu */
+    }
+
+    #hero {
+        height: auto; /* Sesuaikan tinggi otomatis */
+        padding: 4rem 1rem; /* Kurangi padding agar lebih ringkas */
+    }
+
+    .hero-name {
+        font-size: 1.25rem; /* Ukuran nama lebih kecil */
+        max-width: 80%; /* Kurangi lebar container */
+        padding: 1rem; /* Kurangi padding */
+        margin: 0 auto;
+    }
+
+    #hero h1 {
+        font-size: 1.25rem; /* Perkecil ukuran heading */
+        text-align: center;
+    }
+
+    #hero h3 {
+        font-size: 1.5rem; /* Perkecil ukuran heading */
+        text-align: center;
+    }
+
+    #hero p {
+        font-size: 1rem; /* Perkecil ukuran teks */
+        text-align: center;
     }
 }
 
@@ -254,8 +282,18 @@ body {
 }
 
 /* Styling untuk container About Me dan Contact */
-.about-container, .contact-container {
-    max-width: 800px; /* Lebar maksimum */
+.about-container {
+    max-width: 90%; /* Lebar maksimum */
+    margin: 0 auto; /* Pusatkan elemen */
+    padding: 2rem; /* Padding di dalam container */
+    border-radius: var(--itemBorderRadius); /* Border radius menggunakan variabel */
+    background: var(--thirdBackgroundColor); /* Warna latar belakang */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan elemen */
+}
+
+.contact-container {
+    width: 95%;
+    max-width: 1100px; /* Lebar maksimum */
     margin: 0 auto; /* Pusatkan elemen */
     padding: 2rem; /* Padding di dalam container */
     border-radius: var(--itemBorderRadius); /* Border radius menggunakan variabel */
@@ -347,6 +385,7 @@ button:hover {
     .portfolio-item {
         max-width: 50%; /* Lebar maksimum untuk layar kecil */
     }
+}
     
     /* RESPONSIVE: Saat layar lebih kecil */
     @media screen and (max-width: 768px) {
@@ -356,7 +395,7 @@ button:hover {
         }
     
         .contact-container {
-            max-width: 80%; /* Kurangi lebar container */
+            max-width: 90%; /* Kurangi lebar container */
             padding: 1.5rem; /* Kurangi padding */
         }
     
@@ -380,13 +419,14 @@ button:hover {
     }
     
     @media screen and (max-width: 768px) {
+        
         #about-me {
             height: auto; /* Sesuaikan tinggi otomatis */
             padding: 4rem 1rem; /* Kurangi padding agar lebih ringkas */
         }
     
-        .about-me-container {
-            max-width: 75%; /* Kurangi lebar container */
+        .about-container {
+            max-width: 80%; /* Kurangi lebar container */
             padding: 1.5rem; /* Kurangi padding */
         }
     
@@ -403,31 +443,4 @@ button:hover {
             font-size: 0.9rem; /* Perkecil teks input */
         }
     }
-
-    @media screen and (max-width: 768px) {
-        #about-me {
-            height: auto; /* Sesuaikan tinggi otomatis */
-            padding: 4rem 1rem; /* Kurangi padding agar lebih ringkas */
-        }
-    
-        .about-me-container {
-            max-width: 75%; /* Kurangi lebar container */
-            padding: 1.5rem; /* Kurangi padding */
-        }
-    
-        #about-me h2 {
-            font-size: 1.5rem; /* Perkecil ukuran heading */
-        }
-    
-        #about-me p {
-            font-size: 1rem; /* Perkecil ukuran teks */
-        }
-    
-        input, textarea {
-            padding: 8px; /* Kurangi padding input */
-            font-size: 0.9rem; /* Perkecil teks input */
-        }
-    }
-}
-
 
