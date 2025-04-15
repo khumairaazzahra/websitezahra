@@ -1,0 +1,176 @@
+<section id="galeri">
+    <h2>Format Animasi</h2>
+    <div class="galeri-box">
+      <div class="galeri-grid">
+  
+        <div class="galeri-item">
+          <p>stop motion</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\stop motion.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p> 2 dimensi</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\2d.mp4" type="video/webm">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p> 3 dimensi</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\3d.mp4" type="video/ogg">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p>anime</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\anime.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p>motion graphics</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\motion graphics.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p>CGI</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\cgi.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p>Animasi Cout- out</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\cut-out.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p>animasi partikel</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\animasi partikel.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p>rotoscoping</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\rotoscoping.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+        <div class="galeri-item">
+          <p>animasi tipografi</p>
+          <video controls>
+            <source src="c:\Users\clean.user\Desktop\kayweb\animasi\tipografi.mp4" type="video/mp4">
+            Browser kamu tidak mendukung video tag.
+          </video>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+<style>
+ #galeri {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(to right, #f5f5dc, #e8e4d9);
+}
+
+#galeri h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primaryTextColor);
+}
+
+.galeri-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5dc;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.galeri-item {
+  background-color: #fffdf5;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease; 
+}
+
+.galeri-item:hover {
+  transform: scale(1.03);
+}
+
+.galeri-item p {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.galeri-item video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  outline: none;
+  height: 180px; 
+  object-fit: cover;
+}
+.download-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #555;
+}
+
+@media (max-width: 1024px) {
+  .galeri-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .galeri-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>  

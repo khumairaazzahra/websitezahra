@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Font Tulisan</title>
+  <!-- Google Fonts Link -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Indie+Flower&family=Lobster&family=Montserrat&family=Oswald&family=Pacifico&family=Playfair+Display&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+  
+  <section id="galeri">
+    <h2>Galeri Font Tulisan</h2>
+    <div class="galeri-box">
+      <div class="galeri-grid">
+        <div class="galeri-item" style="font-family: 'Roboto', sans-serif;">Roboto</div>
+        <div class="galeri-item" style="font-family: 'Lobster', cursive;">Lobster</div>
+        <div class="galeri-item" style="font-family: 'Oswald', sans-serif;">Oswald</div>
+        <div class="galeri-item" style="font-family: 'Playfair Display', serif;">Playfair Display</div>
+        <div class="galeri-item" style="font-family: 'Pacifico', cursive;">Pacifico</div>
+        <div class="galeri-item" style="font-family: 'Montserrat', sans-serif;">Montserrat</div>
+        <div class="galeri-item" style="font-family: 'Dancing Script', cursive;">Dancing Script</div>
+        <div class="galeri-item" style="font-family: 'Courier New', monospace;">Courier New</div>
+        <div class="galeri-item" style="font-family: 'Raleway', sans-serif;">Raleway</div>
+        <div class="galeri-item" style="font-family: 'Indie Flower', cursive;">Indie Flower</div>
+      </div>
+    </div>
+  </section>
+
+<style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    #galeri {
+      padding: 4rem 1rem;
+      text-align: center;
+      background: linear-gradient(to right, #f5f5dc, #e8e4d9); /* Gradasi warna cream */
+    }
+
+    #galeri h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--primaryTextColor);
+    }
+
+    .galeri-box {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .galeri-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .galeri-item {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 2rem;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f5f5dc; /* Warna cream */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .galeri-item:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 1024px) {
+      .galeri-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .galeri-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .galeri-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>

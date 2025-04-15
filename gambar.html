@@ -1,0 +1,135 @@
+<section id="galeri">
+    <h2>Galeri Proyek</h2>
+    <div class="galeri-box">
+      <div class="galeri-grid">
+        <div class="galeri-item">
+            <p>bmp</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.bmp" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.bmp" alt="Gambar 1">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>gif</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.gif" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.gif" alt="Gambar 2">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>heif</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.heif" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.heif" alt="Gambar 3">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>jpg</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.jpg" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.jpg" alt="Gambar 4">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>pdf</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.pdf" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.pdf" alt="Gambar 5">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>png</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.png" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.png" alt="Gambar 6">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>psd</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.psd" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.psd" alt="Gambar 7">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>psd</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.psd" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.psd" alt="Gambar 8">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>tiff</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.tiff" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145.tiff" alt="Gambar 9">
+          </a>
+        </div>
+        <div class="galeri-item">
+            <p>raw</p>
+          <a href="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145_1743866027.raw" download>
+            <img src="c:\Users\clean.user\Desktop\kayweb\images\IMG-20250322-WA0145_1743866027.raw" alt="Gambar 10">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style>
+    #galeri {
+      padding: 4rem 1rem;
+      text-align: center;
+      background: linear-gradient(to right, #f5f5dc, #e8e4d9); /* Gradasi warna cream */
+    }
+  
+    #galeri h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--primaryTextColor);
+    }
+  
+    .galeri-box {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .galeri-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .galeri-item {
+      background-color: #f5f5dc; /* Warna cream */
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      padding: 10px; /* Menambah padding di dalam box */
+    }
+  
+    .galeri-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 5px; /* Memberikan sedikit kelengkungan pada gambar */
+    }
+  
+    .galeri-item:hover {
+      transform: scale(1.05);
+    }
+  
+    @media (max-width: 1024px) {
+      .galeri-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .galeri-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .galeri-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  

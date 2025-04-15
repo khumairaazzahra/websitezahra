@@ -1,0 +1,137 @@
+<section id="galeri">
+    <h2>Galeri Audio</h2>
+    <div class="galeri-box">
+      <div class="galeri-grid">
+        <div class="galeri-item">
+          <p>Audio MP3</p>
+          <audio controls>
+            <source src="audio/audio1.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio WAV</p>
+          <audio controls>
+            <source src="audio/audio2.wav" type="audio/wav">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio OGG</p>
+          <audio controls>
+            <source src="audio/audio3.ogg" type="audio/ogg">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio AAC</p>
+          <audio controls>
+            <source src="audio/audio4.aac" type="audio/aac">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio FLAC</p>
+          <audio controls>
+            <source src="audio/audio5.flac" type="audio/flac">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio M4A</p>
+          <audio controls>
+            <source src="audio/audio6.m4a" type="audio/mp4">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio WebM</p>
+          <audio controls>
+            <source src="audio/audio7.webm" type="audio/webm">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio OPUS</p>
+          <audio controls>
+            <source src="audio/audio8.opus" type="audio/opus">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio AIFF</p>
+          <audio controls>
+            <source src="audio/audio9.aiff" type="audio/aiff">
+          </audio>
+        </div>
+        <div class="galeri-item">
+          <p>Audio WMA</p>
+          <audio controls>
+            <source src="audio/audio10.wma" type="audio/x-ms-wma">
+          </audio>
+        </div>
+      </div>
+    </div>
+  </section>
+<style>
+    #galeri {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(to right, #f5f5dc, #e8e4d9);
+}
+
+#galeri h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--primaryTextColor);
+}
+
+.galeri-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5dc;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+.galeri-item {
+  background-color: #fffdf5;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.galeri-item:hover {
+  transform: scale(1.03);
+}
+
+.galeri-item p {
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.galeri-item audio {
+  width: 100%;
+  max-width: 250px;
+  outline: none;
+  border-radius: 6px;
+}
+
+@media (max-width: 1024px) {
+  .galeri-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .galeri-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>  
