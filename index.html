@@ -1,87 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Website</title>
-    <link rel="stylesheet" href="maira.css">
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Cream Cerah</title>
+  <link rel="stylesheet" href="maira.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="main-container">
-            <div class="nav">
-                <div class="logo">
-                    <a href="/">KAY</a>
-                </div>
-                    
-                <nav>
-                        <ul class="nav-menu" id="nav-menu">
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about-me">About Me</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>    
-    </header>
+  <nav class="nav">
+    <div class="logo"><a href="#">KAY</a></div>
+    <ul class="nav-menu">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-left">
-            <h3 class="pre-title">Selamat Datang di Website</h3>
-            <h1 class="hero-name">Khumaira Azzahra Yarman</h1>
-            <p>Website masih dalam proses</p>
-        </div>
-    </section>
+  <section id="hero">
+    <div class="hero-name">Hello!!</div>
+    <p>Welcome to my Website.</p>
+  </section>
 
-    <!-- Kotak baru -->
-    <div class="kotak"></div>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm a passionate web developer with expertise in building modern and responsive websites. I enjoy creating intuitive, user-friendly experiences and am constantly exploring new technologies to improve my skills.</p>
+    <p>My expertise includes:</p>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Responsive Web Design</li>
+      <li>GitHub</li>
+    </ul>
+  </section>
 
-    <!-- About Me Section -->
-    <section id="about-me">
-        <div class="about-container">
-            <h2>About Me</h2>
-            <p>Halo! Saya Khumaira Azzahra Yarman, seorang web developer yang sedang belajar membangun website responsif dan interaktif. Saya memiliki minat dalam desain web dan pengembangan front-end.</p>
-        </div>
-    </section>
+  <section id="portfolio">
+    <h2 class="portfolio-title">Project Saya</h2>
+    <div class="portfolio-container">
+      <div class="portfolio-item">
+        <h3>Laporan Sistem Multimedia</h3>
+        <a href="laporan-sistem-multimedia.pdf" class="view-link" target="_blank">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item">
+        <h3>Font</h3>
+        <a href="font.html" class="view-link" target="_blank">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item">
+        <h3>Gambar</h3>
+        <a href="gambar.html" class="view-link" target="_blank">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item">
+        <h3>Audio</h3>
+        <a href="audio.html" class="view-link" target="_blank">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item">
+        <h3>Video</h3>
+        <a href="video.html" class="view-link" target="_blank">Lihat Proyek</a>
+      </div>
+      <div class="portfolio-item">
+        <h3>Animasi</h3>
+        <a href="animasi.html" class="view-link" target="_blank">Lihat Proyek</a>
+      </div>
+    </div>
+  </section>  
 
-    <!-- Kotak baru 2 -->
-    <div class="kotak2"></div>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Silakan hubungi saya melalui:</p>
 
-    <section id="portfolio">
-        <h2>My Portfolio</h2>
-        <div class="portfolio-container">
-            <div class="portfolio-item">
-                <img src="portfolio1.jpg" alt="Project 1">
-                <p>Deskripsi Project 1</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="portfolio2.jpg" alt="Project 2">
-                <p>Deskripsi Project 2</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="portfolio3.jpg" alt="Project 3">
-                <p>Deskripsi Project 3</p>
-            </div>
-        </div>
-    </section>
-<!-- Kotak baru 3 -->
-<div class="kotak3"></div>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-container">
-            <form action="submit.php" method="POST">
-                <input type="text" id="name" name="name" placeholder="Masukkan nama" required>
-                <input type="email" id="email" name="email" placeholder="Masukkan email" required>
-                <textarea id="message" name="message" rows="5" placeholder="Tulis pesan..." required></textarea>
+    <div class="contact-info-noform">
+      <div class="contact-item">
+        <strong>Email:</strong>
+        <a href="mailto:khumairaazzahra5529@student.unri.ac.id">khumairaazzahra5529@student.unri.ac.id</a>
+      </div>
+      <div class="contact-item">
+        <strong>WhatsApp:</strong>
+        <a href="https://wa.me/62859623706500" target="_blank">+62 859-6237-06500</a>
+      </div>
+    </div>
+  </section>
 
-                <button type="submit">Kirim</button>
-            </form>
-        </div>
-    </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Khumairaazzahra.All rights reserved.</p>
+  </footer>
 
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
